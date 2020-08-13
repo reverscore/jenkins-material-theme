@@ -3,15 +3,25 @@
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import 'variables';
 @import 'widgets';
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400, 700, 500, 300);
+@import url(
+  https://fonts.googleapis.com/css?family=Roboto + Mono:400,
+  700,
+  500,
+  300
+);
 
 :not(div.ace_editor) {
   font-family: 'Roboto', sans-serif !important;
   outline: none;
 }
 
-body, table, form, td, th, p {
+body,
+table,
+form,
+td,
+th,
+p {
   color: @color-text !important;
 }
 
@@ -22,7 +32,10 @@ body {
   background-color: @color-bg;
 }
 
-a, a:hover, a:visited, a:link {
+a,
+a:hover,
+a:visited,
+a:link {
   text-decoration: none !important;
   color: @color-link;
   &:hover {
@@ -63,16 +76,16 @@ a, a:hover, a:visited, a:link {
 
   .login {
     top: inherit;
-    margin-top: 3px
+    margin-top: 3px;
   }
 
   .login b {
-    font-weight: 400
+    font-weight: 400;
   }
 
   #search-box {
     background: @color-bg;
-    padding-left: 10px;
+    padding-left: 30px;
   }
 }
 
@@ -95,21 +108,21 @@ a, a:hover, a:visited, a:link {
 #breadcrumbs LI:hover,
 A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
   background-color: transparent !important;
-  color: @color-link !important
+  color: @color-link !important;
 }
 
 #breadcrumbs {
   color: #888 !important;
   text-decoration: none;
-  text-shadow: 0 1px #fff
+  text-shadow: 0 1px #fff;
 }
 
 table.pane tr:nth-child(odd) td {
-  background-color: @color-white
+  background-color: @color-white;
 }
 
 th.pane {
-  background-color: transparent
+  background-color: transparent;
 }
 
 #side-panel .task-link {
@@ -117,28 +130,28 @@ th.pane {
 }
 
 .bottom-sticker-edge {
-  display: none
+  display: none;
 }
 
 .bottom-sticker-inner {
   margin: 0 0 0 -15px;
   padding-left: 15px;
   background: none repeat scroll 0 0 @color-white !important;
-  box-shadow: @color-white 0 3px 8px 1px
+  box-shadow: @color-white 0 3px 8px 1px;
 }
 
 #projectstatus th,
 #projectstatus td {
-  color: @color-text
+  color: @color-text;
 }
 
 #projectstatus th a {
   color: #999;
-  font-weight: 400
+  font-weight: 400;
 }
 
 #projectstatus th a:hover {
-  color: #666
+  color: #666;
 }
 
 #projectstatus tr:hover {
@@ -150,13 +163,13 @@ th.pane {
 }
 
 #projectstatus .healthReportDetails table tbody tr td {
-    background-color: @color-white !important;
-    color: @color-text !important;
+  background-color: @color-white !important;
+  color: @color-text !important;
 }
 
 #projectstatus .healthReportDetails table tbody tr:hover td {
-    background-color: @color-white !important;
-    color: @color-text !important;
+  background-color: @color-white !important;
+  color: @color-text !important;
 }
 
 a#jenkins-home-link {
@@ -186,11 +199,11 @@ table.progress-bar {
 .ygtvlabel:link,
 .ygtvlabel:visited,
 .ygtvlabel:hover {
-  background-color: transparent !important
+  background-color: transparent !important;
 }
 
 #main-panel-content > div:nth-child(2) {
-  background-color: transparent !important
+  background-color: transparent !important;
 }
 
 #main-panel > pre {
@@ -201,11 +214,11 @@ table.progress-bar {
   button {
     text-decoration: none;
     text-align: center;
-    letter-spacing: .5px;
-    -webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    -o-transition: .2s ease-out;
-    transition: .2s ease-out;
+    letter-spacing: 0.5px;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
     cursor: pointer;
     border: none !important;
     border-radius: 2px;
@@ -215,7 +228,8 @@ table.progress-bar {
     text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
   &.primary button {
     color: @color-white !important;
@@ -225,14 +239,14 @@ table.progress-bar {
   & + .yui-button {
     margin-left: 1em;
   }
-
 }
 
 .console-output .error-inline {
   color: @color-red;
 }
 
-.console-output, .console-output * {
+.console-output,
+.console-output * {
   position: relative;
   font-family: 'Roboto Mono', Menlo, monospace !important;
   font-size: 14px;
@@ -246,20 +260,20 @@ table.progress-bar {
 }
 
 .ace_editor {
-  font: 12px/normal 'Roboto Mono', Menlo, monospace;
+  font: 12px / normal 'Roboto Mono', Menlo, monospace;
 }
 
-[style^="color:gray"] {
+[style^='color:gray'] {
   color: @color-grey !important;
 }
 
-[style^="color:red"] {
+[style^='color:red'] {
   color: @color-red !important;
 }
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'afonsof.com/jenkins-material-theme v. @@version'
+  content: 'afonsof.com/jenkins-material-theme v. @@version';
 }
 
 pre {
@@ -289,29 +303,29 @@ pre {
 }
 
 .build-row-cell .pane {
- .build-controls {
-    width: 25%!important;
+  .build-controls {
+    width: 25% !important;
   }
   .build-details {
-    width: 45%!important;
+    width: 45% !important;
   }
   .build-name .display-name {
-    margin-left: 35%!important;
+    margin-left: 35% !important;
   }
 }
 
 .comboBoxList {
-    color: @color-black;
+  color: @color-black;
 }
 
 .build-row-cell .pane {
- .build-controls {
-    width: 25%!important;
+  .build-controls {
+    width: 25% !important;
   }
   .build-details {
-    width: 45%!important;
+    width: 45% !important;
   }
   .build-name .display-name {
-    margin-left: 35%!important;
+    margin-left: 35% !important;
   }
 }
