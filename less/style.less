@@ -376,22 +376,16 @@ div.pipeline-main {
   border-top-right-radius: 0;
 }
 
-/* Custom style for Jnekins */
-.logo img {
-  content: url(“http://jenkins.reverscore.net:8080/job/jenkins-theme-build/lastSuccessfulBuild/artifact/assets/150x122.png”);
-  /*change the path to your logo path*/
+#header .logo {
+  background: url('http://jenkins.reverscore.net:8080/job/jenkins-theme-build/lastSuccessfulBuild/artifact/assets/150x122.png')
+    no-repeat 10px center;
 }
 
-#jenkins-name-icon {
-  display: none;
+#jenkins-home-link {
+  font-size: 0;
 }
 
-.logo:after {
-  content: ‘Rever’;
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 200px;
-  margin-right: 12px;
-  color: #fff;
-  line-height: 40px;
+#jenkins-home-link:after {
+  content: '‘Rever’';
+  font-size: 20px;
 }
